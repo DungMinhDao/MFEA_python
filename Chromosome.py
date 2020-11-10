@@ -18,7 +18,7 @@ class Chromosome:
         self.solution = None
     
     def evaluate(self, Tasks, no_of_tasks):
-        self.factorial_costs = np.zeros(no_of_tasks) * np.Inf
+        self.factorial_costs = np.ones(no_of_tasks) * np.Inf
         self.factorial_ranks = np.zeros(no_of_tasks)
         if self.skill_factor == 0:
             for i in range(no_of_tasks):

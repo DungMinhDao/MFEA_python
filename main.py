@@ -6,12 +6,13 @@ from data_mfea import DataMFEA
 import numpy as np
         
 Tasks = []
-Tasks.append(Task(dims=3, fnc=sphere1, Lb=-5*np.ones(3), Ub=5*np.ones(3)))
-Tasks.append(Task(dims=2, fnc=sphere2, Lb=-5*np.ones(2), Ub=5*np.ones(2)))
+Tasks.append(Task(dims=3, fnc=sphere1, Lb=-3*np.ones(3), Ub=3*np.ones(3)))
+Tasks.append(Task(dims=2, fnc=sphere2, Lb=-10*np.ones(2), Ub=5*np.ones(2)))
 Tasks.append(Task(dims=3, fnc=sphere3, Lb=-5*np.ones(3), Ub=5*np.ones(3)))
+Tasks.append(Task(dims=3, fnc=sphere3, Lb=-5*np.ones(3), Ub=7*np.ones(3)))
 
-pop = 10
-gen = 100
+pop = 30
+gen = 50
 selection_process = 'elitist'
 rmp = 0.3
 
